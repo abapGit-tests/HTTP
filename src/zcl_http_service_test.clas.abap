@@ -1,20 +1,21 @@
-class ZCL_HTTP_SERVICE_TEST definition
-  public
-  create public .
+CLASS zcl_http_service_test DEFINITION
+  PUBLIC
+  CREATE PUBLIC.
 
-public section.
+  PUBLIC SECTION.
 
-  interfaces IF_HTTP_SERVICE_EXTENSION .
-protected section.
-private section.
+    INTERFACES if_http_extension.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
 
-CLASS ZCL_HTTP_SERVICE_TEST IMPLEMENTATION.
+CLASS zcl_http_service_test IMPLEMENTATION.
 
 
-  method IF_HTTP_SERVICE_EXTENSION~HANDLE_REQUEST.
-    response->set_text( 'Hello!' ).
-  endmethod.
+  METHOD if_http_extension~handle_request.
+    server->response->set_cdata( 'Hello!' ).
+  ENDMETHOD.
 ENDCLASS.
