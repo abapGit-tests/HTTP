@@ -4,7 +4,7 @@ CLASS zcl_http_service_test DEFINITION
 
   PUBLIC SECTION.
 
-    INTERFACES if_http_extension.
+    INTERFACES if_http_service_extension.
 
   PROTECTED SECTION.
   PRIVATE SECTION.
@@ -15,7 +15,7 @@ ENDCLASS.
 CLASS zcl_http_service_test IMPLEMENTATION.
 
 
-  METHOD if_http_extension~handle_request.
-    server->response->set_cdata( 'Hello!' ).
+  METHOD if_http_service_extension~handle_request.
+    response->set_text( 'Hello!' ).
   ENDMETHOD.
 ENDCLASS.
