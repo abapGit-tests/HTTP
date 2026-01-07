@@ -21,7 +21,7 @@
      <TTEXT>Start Authorization Check for TADIR Objects</TTEXT>
      <OCLSS>AAAB</OCLSS>
      <OKFLAG>X</OKFLAG>
-     <PS_POSID>BC-SEC-AUT-PFC</PS_POSID>
+     <PS_POSID>BC-SEC-AUT-CHK</PS_POSID>
      <CI_TEXT>Check</CI_TEXT>
      <CH_TEXT>Check</CH_TEXT>
      <PR_TEXT>No</PR_TEXT>
@@ -30,6 +30,13 @@
      <EXCEP_ICON>@08@</EXCEP_ICON>
     </item>
    </USOBX_EXT>
+   <USOBHASH>
+    <NAME>72BDDD08C11B6EBA68347C7EA27A3A</NAME>
+    <TYPE>HT</TYPE>
+    <PGMID>R3TR</PGMID>
+    <OBJECT>HTTP</OBJECT>
+    <OBJ_NAME>ZHTTP_SERVICE_TEST</OBJ_NAME>
+   </USOBHASH>
   </asx:values>
  </asx:abap>
 </abapGit>
